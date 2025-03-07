@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Suscripción - Seleccionar Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <nav class="steps">
+            <a href="index.html" class="step" data-step="1">1</a>
+            <a href="plan.html" class="step active" data-step="2">2</a>
+            <a href="complementos.html" class="step" data-step="3">3</a>
+            <a href="resumen.html" class="step" data-step="4">4</a>
+            <a href="gracias.html" class="step" data-step="5">5</a>
+        </nav>
+        <div class="plan-content">
+            <h2>Seleccionar plan</h2>
+            <p>Tienes la opción de facturación mensual o anual.</p>
+            <div class="plans">
+                <button type="button" class="plan" name="plan" value="Arcade">
+                    <img src="assets/images/icon-arcade.png" alt="Arcade">
+                    <span class="plan-name">Arcade</span>
+                    <span class="plan-price">$9/mes</span>
+                </button>
+                <button type="button" class="plan" name="plan" value="Avanzado">
+                    <img src="assets/images/icon-advance.png" alt="Avanzado">
+                    <span class="plan-name">Avanzado</span>
+                    <span class="plan-price">$12/mes</span>
+                </button>
+                <button type="button" class="plan" name="plan" value="Pro">
+                    <img src="assets/images/icon-pro.png" alt="Pro">
+                    <span class="plan-name">Pro</span>
+                    <span class="plan-price">$15/mes</span>
+                </button>
+            </div>
+            <div class="billing">
+                <span>Mensual</span>
+                <label class="switch">
+                    <input type="checkbox" id="billing" name="billing">
+                    <span class="slider round"></span>
+                </label>
+                <span>Anual</span>
+            </div>
+            <div class="navigation">
+                <a href="index.html" class="prev">Anterior</a>
+                <a href="complementos.html" class="next">Siguiente</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
