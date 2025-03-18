@@ -1,0 +1,32 @@
+html{
+    font-size: 20px;/*unidad de medida absoluta*/
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1rem;
+
+
+
+    /*background-color: red;*/
+    /*background-color: rgb(125,125,125);*/
+    background-image: url();/*Aqui se realiza un request*/
+    background-color: blue;/* rgba(0,0,255,0.5);*//*si no se encuentra la imagen en automatico 
+    se pone el color del fondo*//*fallback rules or values*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(255,255, 255, 1) ;
+    color: rgb(255, 255, 255);
+    color: white;
+    color:#fff;
+    color: #ffffff;
+}
+article{
+    font-size: 100px;
+}
+
+p{
+    font-size: 1rem ;
+}

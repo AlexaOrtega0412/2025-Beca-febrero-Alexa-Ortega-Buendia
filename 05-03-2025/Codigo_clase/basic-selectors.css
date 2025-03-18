@@ -1,0 +1,42 @@
+*{/*Selector universal */
+    margin: 0;
+}
+/*Selecto de id*/
+*title{ 
+    color: blue;
+}
+
+/*Selector de tipo type*/
+p{ 
+    color: aqua;
+}
+/*Selector tipo pseudoclase*/
+p:hover{ 
+    color: green;
+}
+/* Selector de pseudoelementos*/
+p::first-letter{
+    color: orange;
+    text-transform: uppercase;
+}
+p.bold{ /*selector de clase*/
+    font-weight: bold;
+    color: black;
+}
+/*Selector de Atributo*/
+[class="bold"]{
+    color: yellow;
+}
+/*Combinadores: >, ' ', + */
+/* > Hijos */
+section > article > p {
+    color: red;
+}
+/* ' ' Descendientes */
+section p{
+    color:brown;
+}
+/* + Hermanos*/
+h1 + p {
+    color: aquamarine;
+}

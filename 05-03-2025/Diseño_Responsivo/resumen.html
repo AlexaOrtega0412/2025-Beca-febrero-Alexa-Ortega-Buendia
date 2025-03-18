@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Suscripción - Resumen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <nav class="steps">
+            <a href="index.html" class="step" data-step="1">1</a>
+            <a href="plan.html" class="step" data-step="2">2</a>
+            <a href="complementos.html" class="step" data-step="3">3</a>
+            <a href="resumen.html" class="step active" data-step="4">4</a>
+            <a href="gracias.html" class="step" data-step="5">5</a>
+        </nav>
+        <form class="form-content">
+            <fieldset data-step="4">
+                <h2>Resumen</h2>
+                <p>Plan: <span id="plan-summary"></span></p>
+                <p>Servicio en línea: <span id="online-summary"></span></p>
+                <p>Almacenamiento extra: <span id="storage-summary"></span></p>
+                <p>Total: <span id="total-summary"></span></p>
+                <div class="navigation">
+                    <a href="complementos.html" class="prev">Anterior</a>
+                    <a href="gracias.html" class="next">Confirmar</a>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

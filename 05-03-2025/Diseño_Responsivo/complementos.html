@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Suscripción - Complementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <nav class="steps">
+            <a href="index.html" class="step" data-step="1">1</a>
+            <a href="plan.html" class="step" data-step="2">2</a>
+            <a href="complementos.html" class="step active" data-step="3">3</a>
+            <a href="resumen.html" class="step" data-step="4">4</a>
+            <a href="gracias.html" class="step" data-step="5">5</a>
+        </nav>
+        <form class="form-content">
+            <fieldset data-step="3">
+                <h2>Complementos</h2>
+                <label class="addon">
+                    <input type="checkbox" id="online" name="online" value="1">
+                    Servicio en línea (+$1/mes)
+                </label>
+                <label class="addon">
+                    <input type="checkbox" id="storage" name="storage" value="1">
+                    Almacenamiento extra (+$2/mes)
+                </label>
+                <div class="navigation">
+                    <a href="plan.html" class="prev">Anterior</a>
+                    <a href="resumen.html" class="next">Siguiente</a>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
