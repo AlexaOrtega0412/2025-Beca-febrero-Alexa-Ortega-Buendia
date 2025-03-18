@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla de Productos</title>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #75dcfb;
+}
+
+.disponible {
+  background-color: #b8f6b8;
+}
+
+.agotado {
+  background-color: #f0afaf;
+}
+
+.descripcion {
+  font-style: italic;
+  color: #555;
+}
+</style>
+</head>
+
+<body>
+    <h2>Lista de Perfumes</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Perfumes</th>
+      <th>Precio</th>
+      <th>Descripción</th>
+      <th>Disponibilidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cloud</td>
+      <td>$1800</td>
+      <td class="descripcion"> Ariana Grande Cloud 100 ml. Notas:lavanda,pera, crema de coco</td>
+      <td class="disponible">Disponible</td>
+    </tr>
+    <tr>
+      <td>Ari</td>
+      <td>$1700</td>
+      <td class="descripcion">Ariana Grande Ari 100 ml. Notas:pomelo rosado,frambuesa,rosa.</td>
+      <td class="disponible">Disponible</td>
+    </tr>
+    <tr>
+      <td>Thank U Next 2.0</td>
+      <td>$1900</td>
+      <td class="descripcion">Ariana Grande Thank U Next 2.0 30 ml. Notas:granada,manzana,bombón,fresa.</td>
+      <td class="agotado">Agotado</td>
+    </tr>
+    <tr>
+      <td>Mod Vanilla</td>
+      <td>$1300</td>
+      <td class="descripcion">Ariana Grande Mod Vanilla 100 ml. Notas:ciruela,vaillina,almizcle.</td>
+      <td class="disponible">Disponible</td>
+    </tr>
+    <tr>
+        <td>Love Notes: Pink Woods</td>
+        <td>$1300</td>
+        <td class="descripcion">Ariana Grande Love Notes: Pink Woods 125 ml. Notas:Flor de loto,algodon de azucar,jazmin.</td>
+        <td class="agotado">Agotado</td>
+      </tr>
+    <tr>
+        <td colspan="4" style="text-align: center;">Promoción: ¡Envío gratis en compras mayores a $2000!</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
