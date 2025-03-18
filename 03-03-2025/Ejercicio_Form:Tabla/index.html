@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Productos con formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Añadir Producto</h2>
+    <form id="productForm">
+        <label for="nombre">Nombre del perfume</label>
+        <input id="nombre" name="nombre" type="text">
+        <br>
+        <label for="precio">Precio</label>
+        <input id="precio" name="precio" type="number">
+        <br>
+        <label for="descripcion">Descripción</label>
+        <textarea maxlength="50" name="descripcion" id="descripcion"></textarea>
+        <br>
+        <label for="disponibilidad">Disponibilidad</label>
+        <select name="disponibilidad" id="disponibilidad">
+            <option value="disponible">disponible</option>
+            <option value="agotado">agotado</option>
+        </select>
+        <br><br>
+        <button type="button" id="sendbutton">Agregar</button>
+        <br>
+    </form>
+    <br>
+    <h2>Productos</h2>
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Descripción</th>
+                <th>Disponibilidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
