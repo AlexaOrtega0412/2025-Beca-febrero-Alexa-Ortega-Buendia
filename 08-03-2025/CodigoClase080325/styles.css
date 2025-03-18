@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    background-color: tomato;
+    grid-template-columns:repeat(4,100px);/* = 100 100 100 100 */
+    grid-template-rows: 100px 100px 100px 100px;
+    justify-content: center; /*se usa mas en FLEX y este pone los item a la mitad de la columna*/
+    /*justify-items: center;pone cada item en medio de cada columna*/
+    align-items: center;/*si le quitas el center se vuelve strech y es mas visible*/
+    /*justify-items: center;*/
+    /*align-content: center;*/
+    /*REM, PX, FR(fraccion
+    1fr= significa una columna
+    1fr 1fr = dos columnas y el tamaño se divide con respecto al tamaño disponible*/
+
+}
+.item{
+    border-style: 1px solid black;
+    background-color: #ddd;
+}
+.container > :first-child{
+    background-color: aqua;
+    grid-column: 1 / 3;/*indica de donde a donde abarca un ITEM /desde donde abarca el elemento hijo las columnas 
+    la regla parta este ejemplo es 1 / 3 al 3 le restas 1 y abarcaria en realidad del 
+    1/2 */
+    grid-row: 2 / 4;/*row da saltos de linea se va por renglones*/
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Jira</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="layout">
+        <section class="sidebar-blue">
+            <div class="LogosPrinci">
+                <img src="./Imagenes/logo.png" alt="Logo Jira" class="jira-logo">
+                <img src="./Imagenes/lupa.png" alt="Buscar" class="search-icon">
+                <img src="./Imagenes/agregar.png" alt="Agregar" class="add-icon">
+            </div>
+            <img src="./Imagenes/help.png" alt="Ayuda" class="help-icon">
+        </section>
+        <section class="sidebar-gray">
+            <section class="team-info">
+                <img src="./Imagenes/user.png" alt="Logo del equipo" class="team-logo">
+                <span class="team-name">Teams in Space <br> Software Project</span>
+            </section>
+            <ul class="menu-items">
+                <li class="menu-item">
+                    <img src="./Imagenes/backlog.png" alt="Backlog" class="menu-item-icon">
+                    <span>Backlog</span>
+                </li>
+                <li class="menu-item active">
+                    <img src="./Imagenes/board.png" alt="Board" class="menu-item-icon">
+                    <span>Board</span>
+                </li>
+                <li class="menu-item">
+                    <img src="./Imagenes/reports.png" alt="Reports" class="menu-item-icon">
+                    <span>Reports</span>
+                </li>
+                <li class="menu-item">
+                    <img src="./Imagenes/releases.png" alt="Releases" class="menu-item-icon">
+                    <span>Releases</span>
+                </li>
+                <li class="menu-item">
+                    <img src="./Imagenes/components.png" alt="Components" class="menu-item-icon">
+                    <span>Components</span>
+                </li>
+                <li class="menu-item">
+                    <img src="./Imagenes/issues.png" alt="Issues" class="menu-item-icon">
+                    <span>Issues</span>
+                </li>
+                <li class="menu-item">
+                    <img src="./Imagenes/repository.png" alt="Repository" class="menu-item-icon">
+                    <span>Repository</span>
+                </li>
+                <li class="menu-item">
+                    <img src="./Imagenes/addItem.png" alt="Add item" class="menu-item-icon">
+                    <span>Add item</span>
+                </li>
+                <li class="menu-item">
+                    <img src="./Imagenes/settings.png" alt="Settings" class="menu-item-icon">
+                    <span>Settings</span>
+                </li>
+            </ul>
+        </section>
+        </section>
+        <section class="board">
+            <section class="header">
+                <span class="title">Board</span>
+                    <button class="release-btn">Release</button>
+                    <span class="menu">⋮</span>
+            </section>
+            <section class="filters">
+                <input type="text" class="search-bar">
+                <span class="quick-filters">Quick Filters ▼</span>
+            </section>
+            <!--Seccion de las tarjetas-->
+            <section class="columns">
+                <section class="column">
+                    <span class="column-title">TO DO 5</span>
+                    <section class="card-container">
+                        <section class="card">
+                            <span class="card-title">Engage Jupiter Express for<br>outer solar system travel</span>
+                            <span class="card-details underline-amarillo">SPACE TRAVEL PARTNERS</span>
+                        <div class="card-icon-number">
+                            <img src="./Imagenes/flecha-doble-arriba.png" alt="Flecha doble arriba" class="card-icon flecha-doble-arriba">
+                            <span class="card-details"><span class="number-circle">5</span></span>
+                        </div>
+                            <span class="card-details tis-number">TIS-25</span>
+                        </section>
+                        <section class="card">
+                            <span class="card-title">Create 90 day plans for all<br>departments in the Mars Office</span>
+                            <span class="card-details underline-naranja">LOCAL MARS OFFICE</span>
+                            <div class="card-icon-number">
+                                <img src="./Imagenes/prohibido.png" alt="Prohibido" class="card-icon prohibido">
+                                <span class="card-details"><span class="number-circle">9</span></span>
+                            </div>
+                            <span class="card-details tis-number">TIS-12</span>
+                        </section>
+                        <section class="card">
+                            <span class="card-title">Engage Saturn's Rings Resort<br>as a preferred provider</span>
+                            <span class="card-details underline-amarillo">SPACE TRAVEL PARTNERS</span>
+                            <div class="card-icon-number">
+                                <img src="./Imagenes/flecha-doble-arriba.png" alt="Flecha doble arriba" class="card-icon flecha-doble-arriba">
+                                <span class="card-details"><span class="number-circle">3</span></span>
+                            </div>
+                            <span class="card-details tis-number">TIS-17</span>
+                        </section>
+                        <section class="card">
+                            <span class="card-title">Enable Speedy SpaceCraft<br>as the preferred</span>
+                            <span class="card-details underline-aqua">SPACE TRAVEL PARTNERS</span>
+                        </section>
+                    </section>
+                </section>
+                <section class="column">
+                    <span class="column-title">IN PROGRESS 5</span>
+                    <section class="card-container">
+                        <section class="card">
+                            <span class="card-title">Requesting available flights<br>is now taking > 5 seconds</span>
+                            <span class="card-details underline-aqua">SEESPACEEZ PLUS</span>
+                        <div class="card-icon-number">
+                            <img src="./Imagenes/flecha-doble-arriba.png" alt="Flecha doble arriba" class="card-icon flecha-doble-arriba">
+                            <span class="card-details"><span class="number-circle">3</span></span>
+                        </div>
+                            <span class="card-details tis-number">TIS-8</span>
+                        </section>
+                        <section class="card">
+                            <span class="card-title">Engage Saturn Shuttle Lines<br>for group tours</span>
+                            <span class="card-details underline-amarillo">SPACE TRAVEL PARTNERS</span>
+                        <div class="card-icon-number">
+                            <img src="./Imagenes/flecha-doble-arriba.png" alt="Flecha doble arriba" class="card-icon flecha-doble-arriba">
+                            <span class="card-details"><span class="number-circle">4</span></span>
+                        </div>
+                            <span class="card-details tis-number">TIS-15</span>
+                        </section>
+                        <section class="card">
+                            <span class="card-title">Establish a catering vendor<br>to provide meal service</span>
+                            <span class="card-details underline-naranja">LOCAL MARS OFFICE</span>
+                        <div class="card-icon-number">
+                            <img src="./Imagenes/flecha-doble-arriba.png" alt="Flecha doble arriba" class="card-icon flecha-doble-arriba">
+                            <span class="card-details"><span class="number-circle">4</span></span>
+                        </div>
+                            <span class="card-details tis-number">TIS-15</span>
+                        </section>
+                        <section class="card">
+                            <span class="card-title">Engage Saturn Shuttle Lines<br>for group tours</span>
+                            <span class="card-details underline-amarillo">SPACE TRAVEL PARTNERS</span>
+                        </section>
+                    </section>
+                </section>
+                <section class="column">
+                    <span class="column-title">CODE REVIEW 2</span>
+                    <section class="card-container">
+                        <section class="card">
+                            <span class="card-title">Register with the Mars<br>Ministry of Revenue</span>
+                            <span class="card-details underline-naranja">LOCAL MARS OFFICE</span>
+                        <div class="card-icon-number">
+                            <img src="./Imagenes/flecha-doble-arriba.png" alt="Flecha doble arriba" class="card-icon flecha-doble-arriba">
+                            <span class="card-details"><span class="number-circle">3</span></span>
+                        </div>
+                            <span class="card-details tis-number">TIS-11</span>
+                        </section>
+                        <section class="card">
+                            <span class="card-title">Draft network plan for Mars<br>Office</span>
+                            <span class="card-details underline-naranja">LOCAL MARS OFFICE</span>
+                        <div class="card-icon-number">
+                            <img src="./Imagenes/flecha-doble-arriba.png" alt="Flecha doble arriba" class="card-icon flecha-doble-arriba">
+                            <span class="card-details"><span class="number-circle">3</span></span>
+                        </div>
+                            <span class="card-details tis-number">TIS-15</span>
+                        </section>
+                    </section>
+                </section>
+                <section class="column">
+                    <span class="column-title">DONE 8</span>
+                    <section class="card-container">
+                        <section class="card">
+                            <span class="card-title">Homepage footer uses an<br>inline style-should use a class</span>
+                            <span class="card-details underline-morado">LARGE TEAM SUPPORT</span>
+                        <div class="card-icon-number">
+                            <img src="./Imagenes/flecha-doble-arriba.png" alt="Flecha doble arriba" class="card-icon flecha-doble-arriba">
+                        </div>
+                            <span class="card-details tis-number">TIS-68</span>
+                        </section>
+                        <section class="card">
+                            <span class="card-title">Engage JetShuttle <br>SpaceWays for travel</span>
+                            <span class="card-details underline-amarillo">SPACE TRAVEL PARTNERS</span>
+                        <div class="card-icon-number">
+                            <img src="./Imagenes/flecha-doble-arriba.png" alt="Flecha doble arriba" class="card-icon flecha-doble-arriba">
+                            <span class="card-details"><span class="number-circle">5</span></span>
+                        </div>
+                            <span class="card-details tis-number">TIS-23</span>
+                        </section>
+                        <section class="card">
+                            <span class="card-title">Engage Saturn Shuttle Lines<br>for group tours</span>
+                            <span class="card-details underline-amarillo">SPACE TRAVEL PARTNERS</span>
+                            <div class="card-icon-number">
+                            <img src="./Imagenes/flecha-hacia-arriba.png" alt="Flecha arriba" class="card-icon flecha-arriba">
+                            </div>
+                            <span class="card-details tis-number">TIS-15</span>
+                        </section>
+                        <section class="card">
+                            <span class="card-title">Establish a catering vendor<br>to provide meal service</span>
+                            <span class="card-details underline-naranja">LOCAL MARS OFFICE</span>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

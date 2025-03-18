@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estructura HTML</title>
+        <style>
+            .container{
+                background-color: beige;
+                display: grid;
+                grid-template-areas: "header header"
+                                    "nav article1"
+                                    "nav article2"
+                                    "footer footer";
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 100px 200px 200px 100px;
+            }
+            .header, .article1, .article2, .nav,.footer{
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size:20px;
+                font-style:oblique;
+            }
+            .header{
+                grid-area: header;
+                background-color: cadetblue;
+            }
+            .article1{
+                grid-area: article1;
+                background-color: rgb(115, 174, 103);
+            }
+            .article2{
+                grid-area: article2;
+                background-color: rgb(174, 136, 103);
+            }
+            .nav{
+                grid-area: nav;
+                background-color:rgb(174, 103, 103);
+            }
+            .footer{
+                grid-area: footer;
+                background-color: rgb(173, 92, 155);
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+          <article class="header">HEADER</article>
+          <article class="article1">ARTICLE 1</article>
+          <article class="article2">ARTICLE 2</article>
+          <article class="nav"> NAV</article>
+          <article class="footer">FOOTER</article>  
+        </section>
+    </body>
+</html>
