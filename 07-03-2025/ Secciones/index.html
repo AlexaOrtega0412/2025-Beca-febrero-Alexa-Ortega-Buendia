@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secciones</title>
+  <style>
+    .contenedor {
+      display: flex;
+      justify-content: space-around;
+      width: 80%; /* Ajusta el ancho según necesites */
+      height: 290px;
+      margin: 20px auto;
+      background-color: #f0f0f0; /* Fondo gris claro */
+      padding: 60px;
+    }
+
+    .contenedor span {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .contenedor span:nth-child(1) {
+      background-color: #f9a825; /* Naranja */
+    }
+
+    .contenedor span:nth-child(2) {
+      background-color: #4db6ac; /* Verde azulado */
+    }
+
+    .contenedor span:nth-child(3) {
+      background-color: #26a69a; /* Verde oscuro */
+    }
+
+    .contenedor h2 {
+      margin-bottom: 10px;
+    }
+
+    .contenedor p {
+      margin-bottom: 20px;
+      
+    }
+
+    .contenedor button {
+      background-color: white;
+      border: none;
+      padding: 20px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      align-self: center;
+    }
+  </style>
+</head>
+<body>
+  <span class="contenedor">
+    <span>
+      <h2>SEDANS</h2>
+      <p>Un Sedán es un auto de 4 puertas con un maletero separado del habitáculo. Es ideal para viajes largos y cómodos.</p>
+      <button>Learn More</button>
+    </span>
+    <span>
+      <h2>SUVS</h2>
+      <p>Los SUVs son vehículos espaciosos y versátiles. Perfectos para viajes familiares y aventuras al aire libre.</p>
+      <button>Learn More</button>
+    </span>
+    <span>
+      <h2>LUXURY</h2>
+      <p>Los autos de lujo son los más cómodos y elegantes. Disfruta de una experiencia de conducción superior con estilo.</p>
+      <button>Learn More</button>
+    </span>
+  </span>
+</body>
+</html>

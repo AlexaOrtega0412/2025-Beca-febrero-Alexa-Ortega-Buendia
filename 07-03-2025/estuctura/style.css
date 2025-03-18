@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 500px;
+    margin: 0;
+}
+
+header, footer {
+    background-color: #f08080; /* Color rojo claro para header y footer */
+    padding: 20px;
+    text-align: center;
+    height: 30px;
+}
+
+section {
+    display: flex;
+    flex-grow: 1;
+}
+.columnas{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin: 10px;
+}
+.columnas article{
+    margin-bottom: 10px;
+}
+
+section article.col1 {
+    background-color: #00ced1; 
+    flex-grow: 1;
+}
+
+section article.col2 {
+    background-color: #000ad1; 
+    flex-grow: 1;
+    
+}
+
+section article.col3 {
+    background-color: #9370db; 
+    flex-grow: 1;
+    margin: 10px;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta con Imagen</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: hsl(217, 54%, 11%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      min-height: 580px;
+      min-width: 350px;
+      height: 580px;
+      width: 350px;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 15px;
+    }
+
+    .image {
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 20px;
+    }
+    
+    .image img{
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: white;
+      padding-left: 25px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      color: hsl(215, 51%, 70%);
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .detail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .coin {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-left: 25px;
+      padding-bottom: 20px;
+    }
+
+    .time {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-right: 25px;
+      padding-bottom: 20px;
+    }
+
+    .coin p{
+      margin-left: 8px;
+      padding: 0;
+      color: hsl(178, 100%, 50%);
+    }
+
+    .time p{
+      padding: 0;
+      margin-left: 8px;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      flex-wrap: wrap;
+      border-top: 1px solid hsl(215, 32%, 27%);
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    .user img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 30px;
+      height: 30px;
+      border: solid white 1px;
+      border-radius: 50%;
+    }
+
+    .user p {
+      padding: 10px;
+      color: white;
+    }
+
+    .user .creation {
+      color: hsl(215, 51%, 70%);
+      margin-right: 5px;
+    }
+
+    .user .name {
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="image">
+      <img src="image.png">
+    </div>
+    <h2>
+      Equilibrium #3429
+    </h2>
+    <p>
+      Our Equilibrium collection promotes balance and calm.
+    </p>
+    <div class="detail">
+      <div class="coin">
+        <img src="rombo.png">
+        <p>
+          0.041 ETH
+        </p>
+      </div>
+      <div class="time">
+        <img src="reloj.png">
+        <p>
+          3 days left
+        </p>
+      </div>
+    </div>
+    <div class="user">
+      <img src="avatar.png">
+      <p>
+        <div class="creation">Creation of</div>
+        <div class="name">Jules Wyvern</div>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

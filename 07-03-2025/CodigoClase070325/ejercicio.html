@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <tile>Move element througth an event </tile>
+        <style>
+            .box{
+                background-color: black;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top:0;
+                
+            }
+            .container{
+                display: flex;
+                /*flex-direction: row;Eje principal X y si agregamos
+                el start se pondra al inicio y arriba*/
+                flex-direction: column;/*Eje principal Y*/
+                justify-content: start;/*Van al inicio con respecto al ejer de Y*/
+                width: 100px;
+                height: 500px;
+            }
+            .container * {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <section class="container">
+            <article>A</article>
+            <article>B</article>
+            <article>C</article>
+            <article>D</article>
+        </section>
+        <script src="./script.js"></script>
+    </body>
+</html>
