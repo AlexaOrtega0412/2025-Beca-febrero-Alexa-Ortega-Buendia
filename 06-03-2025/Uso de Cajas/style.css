@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+  color: hsl(180, 8%, 52%);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 0%;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0;
+}
+.header{
+    background-image: url('images/bg-header-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+.filtro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  
+  .filtro span {
+    background-color: hsl(180, 31%, 95%);
+    color: hsl(180, 29%, 50%);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .filtro span:hover {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+  }
+  
+  .selected-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  
+  .selected-filters span {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .selected-filters span:hover {
+    background-color: hsl(180, 14%, 20%);
+  }
+
+/* Lista de trabajos */
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 24px;
+  border-style: 3px solid rgb(186, 183, 183);
+}
+
+.job-item {
+  background-color: white;
+  padding: 24px;
+  border-radius: 0px;
+  border-style: 3px solid rgb(186, 183, 183);
+  display: flex;
+  flex-wrap: wrap; /*wrap controla los elementos dentro del contenedor*/
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.job-item.featured {
+  border-left: 5px solid hsl(180, 29%, 50%);
+}
+
+/* Logotipo del trabajo */
+.job-logo {
+  flex-shrink: 0;/*Proporcion en la que reduce los elementos cuando el espacio es más pequeño*/
+  width: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Información del trabajo */
+.job-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;/*flex-grow= Proporcion en la que crecen los elementos uando el espacio es más grande*/
+  padding: 0 15px;
+}
+
+.job-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.job-title h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(180, 14%, 20%);
+  margin-right: 10px;
+}
+.featured {
+    background-color: white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+.new {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 5px;
+  gap: 8px;
+  align-items: center;
+}
+.feat{
+    background-color: hsl(180, 14%, 20%);;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 5px;
+    gap: 8px;
+    align-items: center;
+}
+.name_com{
+  color: hsl(180, 29%, 50%);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;/*transforma el texto uppercase convierte el texto en mayusculas*/
+  margin-right: 5px;
+  gap: 8px;
+  align-items: center;
+}
+
+.job-details p {
+  font-size: 14px;
+  color: hsl(180, 8%, 52%);
+  line-height: 1.5;/*altura entre las lineas*/
+}
+
+
+.job-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.job-tags span {
+  background-color: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.job-tags span:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+/*Para el contenedor del filtro*/
+.filtro{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filtro span{
+    background-color: white;
+    padding: 24px;
+    border-radius: 0px;
+    border-style: 3px solid rgb(186, 183, 183);
+    display: flex;
+    flex-wrap: wrap; /*wrap controla los elementos dentro del contenedor*/
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.filtro span:hover{
+    background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .job-item {
+    flex-direction: column;
+    align-items: flex-start;/*acomoda los elementos en eje vertical*/
+    padding: 20px;
+  }
+
+  .job-logo {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+
+  .job-tags {
+    margin-top: 10px;
+  }
+}

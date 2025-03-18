@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(207, 201, 171);
+    
+}
+.cuadro {
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    border-top: 10px double black;
+    border-right: 10px solid black;
+    border-bottom: 10px dotted black;
+    border-left: 10px dashed black;
+    background-color: rgb(183, 133, 115);
+}
+p{
+    text-align: center;
+    color: white;
+}
