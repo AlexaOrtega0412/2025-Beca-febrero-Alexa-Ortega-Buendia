@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="h1-container">
+        <h1>OPERADORES LÓGICOS</h1>
+        <div> 
+            <button onclick="mostrarAnd()">OPERADOR AND</button>
+            <button onclick="mostrarOr()">OPERADOR OR</button>
+            <button onclick="mostrarNot()">OPERADOR NOT</button>
+        </div>
+    </div>
+
+    <section class="table-container">
+        <section class="table-section" data-operador="AND">
+            <h2>TRUE && FALSE = FALSE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expresión</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="trueFalseTable"></tbody>
+            </table>
+        </section>
+
+        <section class="table-section" data-operador="AND">
+            <h2>FALSE && FALSE = FALSE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expresión</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="falseFalseTable"></tbody>
+            </table>
+        </section>
+
+        <section class="table-section" data-operador="AND">
+            <h2>FALSE && TRUE = FALSE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expresión</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="falseTrueTable"></tbody>
+            </table>
+        </section>
+
+        <section class="table-section" data-operador="AND">
+            <h2>TRUE && TRUE = TRUE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expresión</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="trueTrueTable"></tbody>
+            </table>
+        </section>
+<!-- INICIA LA SECCION DE OR-->
+        <section class="table-section" data-operador="OR">
+            <h2>FALSE || FALSE = FALSE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expresión</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="orFalseFalseTable"></tbody>
+            </table>
+        </section>
+
+        <section class="table-section" data-operador="OR">
+            <h2>FALSE || TRUE = TRUE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expresión</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="orFalseTrueTable"></tbody>
+            </table>
+        </section>
+
+        <section class="table-section" data-operador="OR">
+            <h2>TRUE || FLASE = TRUE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expresión</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="orTrueFalseTable"></tbody>
+            </table>
+        </section>
+
+        <section class="table-section" data-operador="OR">
+            <h2>TRUE || TRUE = TRUE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expresión</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="orTrueTrueTable"></tbody>
+            </table>
+        </section>
+<!-- INICIA LA SECCION DE NOT-->
+        <section class="table-section" data-operador="NOT">
+            <h2>!1 = 0</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expresión</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="notFalseTable"></tbody>
+            </table>
+        </section>
+
+        <section class="table-section" data-operador="NOT">
+            <h2>!0 = 1 </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expresión</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="notTrueTable"></tbody>
+            </table>
+        </section>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
