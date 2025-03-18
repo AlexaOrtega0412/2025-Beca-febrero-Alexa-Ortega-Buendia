@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;    
+    user-select: none;
+
+}
+body{
+    background-color: white 
+}
+
+/*encabezado de la pagina*/
+.title{
+    
+    padding-top: 4%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*boton para llamar a api*/
+#getAPIBtn{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    background-color: green;
+    color: white;
+    width: 10vw;
+    height: 4vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* contenedor de todas las tarjetas */
+#pokeGrid{  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    text-align: center; 
+    margin-top: 5vh; 
+    width: 100vw;
+    overflow: scroll;
+    align-items: center;
+}
+
+/* div contenedor de cada tarjeta */
+.pokeCard{
+    width: 150px;
+    height: 280px;    
+    background-color: #B7CE63;
+    font-size: 12px;
+    border-radius: 10px;
+    border: 2px;
+    border-style: dashed;
+    border-color: green;
+    align-items: center;
+    align-content: center;
+    opacity: 80%;   
+}
+
+.pokeCard:hover{
+    opacity: 100%;
+}
+
+/* contenedor del nombre de pokemon */
+.pokeCard h4{
+    text-transform: uppercase;
+}
+
+/*div contenedor de detalles del pokemon */
+.infoPokemon{
+    /* background-color: red; */    
+    display: none;
+    text-align: start;
+    padding-left: 2vw;
+
+   
+}
+
+ /*div contenedor de l aimagen y del div de detalles*/ 
+.contenedorInfoImagen{
+    
+    }
+
+
+
+img{
+    cursor: crosshair;
+    transition: transform 0.5s;
+}
+
+img:hover{
+    transform: rotateY(180deg);
+}
+
+a:link{
+    color: green;
+}
+
+a{
+    color: green;
+}
