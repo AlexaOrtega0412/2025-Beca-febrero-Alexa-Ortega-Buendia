@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Mascotas "Patitas Felices"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <h1>Patitas Felices</h1>
+        <p>Todo lo que tu mascota necesita</p>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <article>
+                <h2>Bienvenido a nuestra tienda</h2>
+                <p>En Patitas Felices, nos apasiona el bienestar de tus mascotas. Ofrecemos una amplia gama de productos y servicios para consentirlos.</p>
+                <figure>
+                    <img src="./pergat.png" alt="Mascotas felices">
+                    <figcaption>¡Mascotas felices, dueños felices!</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div id="listaProductos">
+            </div>
+        </section>
+
+        <template id="plantillaProducto">
+            <article>
+                <h3></h3>
+                <p></p>
+                <details>
+                    <summary>Ver detalles</summary>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </details>
+            </article>
+        </template>
+
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <article>
+                <h3>Peluquería</h3>
+                <p>Baño, corte de pelo, limpieza de oídos y uñas.</p>
+                <time datetime="2024-12-31">Disponible hasta el 31 de diciembre de 2024</time>
+            </article>
+            <article>
+                <h3>Veterinario</h3>
+                <p>Consultas, vacunas, desparasitación y cirugías.</p>
+                <time datetime="2025-01-01">Disponible a partir del 1 de enero de 2025</time>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Promociones</h3>
+            <p>¡Descuentos especiales en alimentos y accesorios!</p>
+            <mark>¡No te lo pierdas!</mark>
+        </aside>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <address>
+                <p>Dirección: Calle Principal #123</p>
+                <p>Teléfono: 555-123-4567</p>
+                <p>Email: info@patitasfelices.com</p>
+            </address>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <input list="mensajes-predefinidos" id="mensaje" name="mensaje" required>
+                <datalist id="mensajes-predefinidos">
+                    <option value="Quiero información sobre los alimentos para perros."></option>
+                    <option value="¿Tienen servicio de peluquería para gatos?"></option>
+                    <option value="Me gustaría saber más sobre las promociones."></option>
+                    <option value="Tengo un problema con mi pedido."></option>
+                    <option value="Otros"></option>
+                </datalist>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Patitas Felices</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

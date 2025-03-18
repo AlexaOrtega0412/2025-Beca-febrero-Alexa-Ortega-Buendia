@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">>
+        <title>Documento Etiquetas HTMl</title>
+    </head>
+    <body>
+    <img src="imagen.png" alt="Imagen de silueta de un hombre">
+    <figcaption>Imagen representativa de una figura humana</figcaption>
+    <label for="nivel">Nivel de habilidad</label>
+    <meter id="nivel" value="0.7" min="0" max="1"></meter>
+    <br>
+    <label for="colors">Search a topics</label>
+    <input type="text" list="colores" name="colors" id="colors">
+    <datalist id="colores">
+        <option value="rojo"></option>
+        <option value="marron"></option>
+        <option value="azul"></option>
+        <option value="verde"></option>
+        <option value="amarillo"></option>
+    </datalist>
+    <br>
+    <br>
+    <template id="template"><!--Sirve solo para clonar el contenido-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dignissimos nobis nihil sunt nostrum, reiciendis alias illum. Molestias asperiores, harum inventore modi maiores, aliquid provident sunt possimus ipsa vero recusandae.</p>
+    </template>
+    <br>
+    <br>
+    <br>
+    <label for="predictiveInput">SEARCH</label>
+    <input id="predictiveInput" type="text">
+    <script>
+        const input = document.querySelector('#predictiveInput');
+        let texto = '';
+        const listToSearch = ['rojo', 'azul', 'verde'];
+        let listaFiltrada = [];
+        input.addEventListener('input', ({data}) => {
+            texto += data;
+            listaFiltrada = listToSearch.filter((element) => {
+                return element === texto || element.includes(texto);
+            });
+            if(listaFiltrada.length > 0) {
+                const ul = document.createElement('ol');
+                listaFiltrada.forEach((option) => {
+                    const li = document.createElement('li');
+                    li.innerText = option;
+                    ul.appendChild(li);
+                    document.body.appendChild(ul);
+                });
+            }
+        });
+
+
+        // const template = document.getElementById('template');//Referencia 
+        // const clone= template.content.cloneNode(true);
+        // document.body.appendChild(clone);
+    </script>
+    </body>
+    </body>
+</html>
